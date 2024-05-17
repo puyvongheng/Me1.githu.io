@@ -1,8 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+
   
   body {
     background: #e6e6e6;
@@ -24,20 +20,7 @@
     
 
   }
-  @keyframes profile{
-    0%{box-shadow:1px 1px 10px #000000;}
-    10%{box-shadow:1px 1px 10px #fc0d0d;}
-    20%{box-shadow:1px 1px 10px #eaff08;}
-    30%{box-shadow:1px 1px 10px #09ff32;}
-    40%{box-shadow:1px 1px 10px #0285ff;}
-    50%{box-shadow:1px 1px 10px #a20eff;}
-    60%{box-shadow:1px 1px 10px #ff0ee7;}
-    70%{box-shadow:1px 1px 10px #a20eff;}
-    80%{box-shadow:1px 1px 10px #ff0e26;}
-    90%{box-shadow:1px 1px 10px  #a20eff;}
-    100%{box-shadow:1px 1px 10px #ff0202;}
 
-  }
   .profilename{
     padding: 20px;
     margin-top: 20px;
@@ -48,26 +31,7 @@
 
   }
 
-  @keyframes beat{
-    0%{transform: scale(1);}
-    25%{transform: scale(1.2);}
-    50%{transform: scale(1.3);}
-    60%{color: #e416ff;}
-    75%{transform: scale(1.4);}
-    80%{transform: scale(1.5);}
-    90%{transform: scale(1);}
-    100%{transform: scale(1.2);}
-  }
 
-  /* 1 
-  .heading {
-    margin-left: 20px;
-    text-align: left;
-    font-size: 30px;
-    margin-bottom: 50px;
-    
-  }*/
-  
   .row {
     display: flex;
     justify-content: space-around;
@@ -85,17 +49,7 @@
    
     height: 70px;
     width: 10%;
-    
- 
-       
-    
-    /*border: 10px solid #8b36e15b;*/
-    
-
-  
     transition: 0.5s;}
-
-
 
     .card-body{
   
@@ -104,9 +58,7 @@
         margin-top: -20px;
         box-shadow: 2px 2px 20px chartreuse;
         border-radius: 20px;
-        
-        
-        
+           
     
     }
 
@@ -129,27 +81,13 @@
     }
   
 
-  
-  
 
-  
-
-  /*
-  .card-body .btn:hover {
-    transform: scale(1.1);
-  }
-  */
-  
   .card:hover {
     transition: 0.8s;
     transform: scale(0.8);
   }
   
 
-
-
-  
-  /* Responsive media queries */
   
   @media screen and (max-width: 1000px) {
     .card {
@@ -185,13 +123,6 @@
       box-shadow: 2px 2px 2px rgb(255, 255, 255);
       
     }
-   /* .card {
-        width: 90%;
-        background-color: #000000;
-        border-radius: 20px;
-     
-      
-      }*/
 
     
   }
