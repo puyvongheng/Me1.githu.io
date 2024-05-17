@@ -6,9 +6,200 @@
     <title>Puyvong Heng</title>
     <link rel="icon" href="HENGLOGO.ai.png">
     <link rel="stylesheet" href="style.css">
+    <style>
+
+.navbar{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(78, 188, 64);
+            display: flex;
+            flex-direction: flex;
+            
+
+        }
+        .a:hover{
+            background-color: burlywood;
+        }
+        .a{
+           
+            width: 80px;
+            height: 29px;
+            margin: 1px;
+            padding: 10px;
+            border-radius: 0px;
+            color: aliceblue;
+            text-decoration: none;
+            background-color: rgb(250, 95, 255);
+        }
+  
+        a{
+            text-decoration: none;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+
+        }
+        .custom-alert {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #333030; /* Red background color */
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.555);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            display: none;
+            width: 70%;
+            height: 300px;
+     
+        }
+        .custom-alert button {
+            background-color: rgb(217, 174, 174);
+            color: #000000;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            height: 50px;
+        }
+        .custom-alert  button:hover {
+            background-color:gold;
+        }
+        .aa:hover {
+            background-color:gold;
+        }
+        .alert-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(6, 6, 6, 0.937);
+          
+            z-index: 999;
+        }
+        .show-alert-button {
+            background-color: #f44336;
+            border: none;
+            border-radius: 5px;
+
+            
+           
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: none;
+            text-align: end;
+         
+          
+           
+        }
+        .menu_img{
+                        width:25px ;
+                        height: 20px;
+                  
+
+                      }
+   
+                      /* Media Queries for Responsive Design */
+                      @media (max-width: 600px) {
+                        .show-alert-button{
+            display: block;
+        }
+                        
+     .a{
+
+           
+           width: 80px;
+           height: 29px;
+           border-radius: 0px;
+           color: aliceblue;
+           text-decoration: none;
+           background-color: rgb(156, 170, 170);
+           display: none  ;
+       }
+
+
+                        .navbar{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(221, 171, 171);
+            display: flex;
+            flex-direction: column;
+            display: none;
+
+
+                      }
+                      
+                      
+                      
+                      }
+                      .aa{
+                        background-color: rgb(217, 174, 174);
+                        color: #000000;
+            border: none;
+     
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            height: 50px;
+
+                   
+                      }
+    </style>
 </head>
 <body>
-     <a href="https://puyvongheng.github.io/link/">home link web</a>
+    <button class="show-alert-button" onclick="showCustomAlert()">
+        <img class="menu_img" src="https://img.icons8.com/ios-glyphs/480/menu--v3.png" alt="menu--v3"/>
+        menu</button>
+    <p id="p" class="p"></p>
+
+    <div class="custom-alert" id="customAlert">
+        <button onclick=" closeCustomAlert()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
+              <path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z"/>
+              <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
+            </svg>
+            </button>
+       
+    <center>
+
+        <a  href="#"><div class="aa">home</div></a>
+        <a  href="#"><div class="aa">about</div></a>
+        <a href="#"><div class="aa">Services</div></a>
+        <a   href="#"><div style="background-color: gold" class="aa">Contact</div></a>
+       
+
+    </center>
+      
+
+        
+      
+       
+
+       
+    </div>
+    <!--បង្កើត Navigation bar សម្រាប់Web page ដោយមិនប្រើប្រាស់ List used div-->  
+   
+    <div class="navbar">
+        <a href="#" > <div class="a">home</div></a>
+        <a href=""><div class="a">about</div></a>
+        <a href="">  <div class="a">Services</div></a>
+        <a href="">  <div class="a">Contact</div></a>
+      
+    </div>
+    
 
   <center>    <img class="profile" src="profile.jpg" alt="">
     <h1 class="profilename">Puyvong Heng</h1>
@@ -145,7 +336,35 @@
   
   
   
-  
+      <script>
+
+        function showCustomAlert() {
+                    document.getElementById('customAlert').style.display = 'block';
+                    document.querySelector('.alert-overlay .linkalet').style.display = 'block';
+                    document.querySelector('.show-alert-button').style.display = 'none';
+                    
+                  
+                }
+        
+                function closeCustomAlert() {
+                    document.getElementById('customAlert').style.display = 'none';
+                    document.querySelector('.alert-overlay ').style.display = 'none';
+                }
+        
+               
+        
+               function hidebar() {
+                  
+                    document.querySelector('.navbar').style.display = 'none';
+                  
+                }
+                function showbar() {
+                  
+                  document.querySelector('.navbar').style.display = 'block';
+                
+              }
+            </script>
+        
   
 </body>
 </html>
