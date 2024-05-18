@@ -313,7 +313,7 @@
 
      
 
-        <script>
+             <script>
 function showCustomAlert() {
     setTimeout(closeCustomAlert, 5000);
     document.querySelector('.show-alert-button').style.display = 'none';
@@ -330,6 +330,20 @@ function showCustomAlert() {
         }
 
        
+        let lastScrollTop = 0;
+const navbar =  document.querySelector('.show-alert-button .navbar');
+
+window.addEventListener("scroll", function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        // Downscroll
+        navbar.style.top = "-60px"; // Adjust this value if the navbar height changes
+    } else {
+        // Upscroll
+        navbar.style.top = "0";
+    }
+    lastScrollTop = scrollTop;
+});
 
 
     </script>
