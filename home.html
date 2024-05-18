@@ -347,13 +347,11 @@
 
     
     <script>
-
 function showCustomAlert() {
+    setTimeout(closeCustomAlert, 5000);
             document.getElementById('customAlert').style.display = 'block';
             document.querySelector('.alert-overlay .linkalet').style.display = 'block';
-            document.querySelector('.show-alert-button').style.display = 'none';
-            
-          
+        
         }
 
         function closeCustomAlert() {
@@ -361,18 +359,6 @@ function showCustomAlert() {
             document.querySelector('.alert-overlay ').style.display = 'none';
         }
 
-       
-
-       function hidebar() {
-          
-            document.querySelector('.navbar').style.display = 'none';
-          
-        }
-        function showbar() {
-          
-          document.querySelector('.navbar').style.display = 'block';
-        
-      }
     </script>
 
 
