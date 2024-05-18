@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
            .navbar{
             width: 100%;
             height: 50px;
             background-color: rgb(78, 188, 64);
             display: flex;
             flex-direction: flex;
-                 top: 20px;
+     
         }
         .a:hover{
             background-color: burlywood;
@@ -30,10 +30,10 @@
         a{
             text-decoration: none;
         }
-
         body {
             font-family: Arial, sans-serif;
         }
+        /*---------------------custom-alert-------------------------------------------*/
         .custom-alert {
             display: none;
             position: fixed;
@@ -96,16 +96,17 @@
                       }
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-                      body {
+                      .body1 {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+         /*   align-items: center;
+         
             background-color: #f4f4f4;
             flex-wrap: wrap;
-            
+            display: flex;
+            flex-wrap: wrap;*/
+            margin: 50px;
         }
 
         .product-box {
@@ -163,11 +164,11 @@
                       /* Media Queries for Responsive Design */
                       @media (max-width: 600px) {
 
-                        body {
+                        .body1 {
+                            
                 flex-direction: column;
                 height: auto;
-                padding: 20px;
-                             margin-right: 50px;
+             margin: 50px;
             }
 
             .product-box {
@@ -237,80 +238,80 @@
                       }
 
 </style>
-<body>
-    <button style="  position: fixed;
+    <body>
+        <button style="  position: fixed;
     top: 10px;
     right: 10px;
     background: none;
     border: none;
     cursor: pointer;
     background-color: #ff0202;
-    " 
-    
-    
-    class="show-alert-button" onclick="showCustomAlert()">
-        <img class="menu_img" src="https://img.icons8.com/ios-glyphs/480/menu--v3.png" alt="menu--v3"/>
+    "
+            class="show-alert-button" onclick="showCustomAlert()">
+            <img class="menu_img"
+                src="https://img.icons8.com/ios-glyphs/480/menu--v3.png"
+                alt="menu--v3" />
         </button>
-    <p id="p" class="p"></p>
+        <p id="p" class="p"></p>
 
-    <div class="custom-alert" id="customAlert">
-        <button onclick=" closeCustomAlert()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
-              <path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z"/>
-              <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
-            </svg>
+        <div class="custom-alert" id="customAlert">
+            <button onclick=" closeCustomAlert()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-backspace"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z" />
+                    <path
+                        d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                </svg>
             </button>
-       
-    <center>
 
-        <a  href="home.html"><div style="background-color: gold" class="aa">home</div></a>
-        <a  href="#"><div class="aa">about</div></a>
-        <a href="#"><div class="aa">Services</div></a>
-        <a   href="index.html"><div  class="aa">Contact</div></a>
-       
+            <center>
 
-    </center>
-      
+                <a href="home.html"><div style="background-color: gold"
+                        class="aa">home</div></a>
+                <a href="#"><div class="aa">about</div></a>
+                <a href="#"><div class="aa">Services</div></a>
+                <a href="index.html"><div class="aa">Contact</div></a>
 
-        
-      
-       
+            </center>
 
-       
-    </div>
-    <!--បង្កើត Navigation bar សម្រាប់Web page ដោយមិនប្រើប្រាស់ List used div-->  
-  
-    <div class="navbar">
-        <a href="#" > <div class="a">home</div></a>
-        <a href=""><div class="a">about</div></a>
-        <a href="">  <div class="a">Services</div></a>
-        <a href="index.html">  <div class="a">Contact</div></a>
-      
-    </div>
- 
+        </div>
+        <!--បង្កើត Navigation bar សម្រាប់Web page ដោយមិនប្រើប្រាស់ List used div-->
 
-    <div class="product-box">
-       <img src="img/Screenshot 2024-05-18 084537.png" alt="Product Image" class="product-image">
-        <h2 class="product-title">open web</h2>
-        <p class="product-description">link </p>
-        <div class="product-price">web</div>
-        <a class="buy-button" href="linkweb.html">open</a>
-       
-    </div>
-  
+        <div class="navbar">
+            <a href="#"> <div class="a">home</div></a>
+            <a href><div class="a">about</div></a>
+            <a href> <div class="a">Services</div></a>
+            <a href="index.html"> <div class="a">Contact</div></a>
 
-    <div class="product-box">
-       <img src="img/Screenshot 2024-05-18 084537.png" alt="Product Image" class="product-image">
-        <h2 class="product-title">open web</h2>
-        <p class="product-description">link </p>
-        <div class="product-price">web</div>
-        <a class="buy-button" href="linkweb.html">open</a>
-       
-    </div>
-  
+        </div>
+        <div class="body1">
 
+            <div class="product-box">
+                <img src="img/Screenshot 2024-05-18 084537.png" alt="Product Image"
+                    class="product-image">
+                <h2 class="product-title">open web</h2>
+                <p class="product-description">link </p>
+                <div class="product-price">web</div>
+                <a class="buy-button" href="linkweb.html">open</a>
     
-    <script>
+            </div>
+    
+            <div class="product-box">
+                <img src="img/Screenshot 2024-05-18 084537.png" alt="Product Image"
+                    class="product-image">
+                <h2 class="product-title">open web</h2>
+                <p class="product-description">link </p>
+                <div class="product-price">web</div>
+                <a class="buy-button" href="linkweb.html">open</a>
+    
+            </div>
+        </div>
+
+     
+
+        <script>
 function showCustomAlert() {
     setTimeout(closeCustomAlert, 5000);
     document.querySelector('.show-alert-button').style.display = 'none';
@@ -331,7 +332,5 @@ function showCustomAlert() {
 
     </script>
 
-
-    
-</body>
+    </body>
 </html>
