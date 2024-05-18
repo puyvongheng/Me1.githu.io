@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puyvong Heng</title>
+    <link rel="icon" href="HENGLOGO.ai.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bar.css">
+  
+    <style>
+  
+    </style>
+  </head>
+  <body>
+    <button 
+      class="show-alert-button" onclick="showCustomAlert()  ">
+      <img class="menu_img"
+        src="https://img.icons8.com/ios-glyphs/480/menu--v3.png"
+        alt="menu--v3" />
+    </button>
+    <p id="p" class="p"></p>
+
+    <div class="custom-alert" id="customAlert">
+      <div class="xx">
+        <button id="x" onclick=" closeCustomAlert()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
+            <path
+              d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z" />
+            <path
+              d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+          </svg>
+        </button>
+      </div>
+      
+
+      <center>
+
+        <a href="home.html"><div class="aa">home</div></a>
+        <a href="seevices.html"><div class="aa">about</div></a>
+        <a href="seevices.html"><div class="aa">Services</div></a>
+        <a href="index.html"><div style="background-color: rgb(255, 255, 255)"
+            class="aa">Contact</div></a>
+
+      </center>
+
+    </div>
+    <!--បង្កើត Navigation bar សម្រាប់Web page ដោយមិនប្រើប្រាស់ List used div-->
+
+    <div class="navbar">
+      <a href="home.html"> <div class="a">home</div></a>
+      <a href="about.html"><div class="a">about</div></a>
+      <a href="seevices.html"> <div class="a">Services</div></a>
+      <a href="index.html"> <div class="a">Contact</div></a>
+
+    </div>
+
+  
+
+<script>
+  function showCustomAlert() {
+    setTimeout(closeCustomAlert, 5000);
+    document.querySelector('.show-alert-button').style.display = 'none';
+    document.getElementById('customAlert').style.display = 'block';
+    document.querySelector('.alert-overlay .linkalet').style.display = 'block';
+
+    document.getElementById(' show-alert-button').style.display = 'none';
+}
+
+function closeCustomAlert() {
+    document.querySelector('.show-alert-button').style.display = 'block';
+    document.getElementById('customAlert').style.display = 'none';
+    document.querySelector('.alert-overlay ').style.display = 'none';
+}
+
+
+
+
+
+
+</script>
+
+  </body>
+</html>
