@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-    <style>
-
-.navbar{
+<style>
+           .navbar{
             width: 100%;
             height: 50px;
             background-color: rgb(78, 188, 64);
@@ -109,9 +108,105 @@
                   
 
                       }
+
+
+
+
+
+                      body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin: 10px;
+            transition: width 0.3s ease;
+        }
+
+        .product-image {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333;
+        }
+
+        .product-description {
+            font-size: 0.9em;
+            color: #777;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            color: #e67e22;
+            margin: 15px 0;
+        }
+
+        .buy-button {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .buy-button:hover {
+            background-color: #d35400;
+        }
+
    
                       /* Media Queries for Responsive Design */
                       @media (max-width: 600px) {
+
+                        body {
+                flex-direction: column;
+                height: auto;
+                padding: 10px;
+            }
+
+            .product-box {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .product-title {
+                font-size: 1.2em;
+            }
+
+            .product-description {
+                font-size: 0.8em;
+            }
+
+            .product-price {
+                font-size: 1em;
+            }
+
+            .buy-button {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
                         .show-alert-button{
             display: block;
         }
@@ -156,9 +251,20 @@
 
                    
                       }
-    </style>
+
+</style>
 <body>
-    <button class="show-alert-button" onclick="showCustomAlert()">
+    <button style="  position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: #ff0202;
+    " 
+    
+    
+    class="show-alert-button" onclick="showCustomAlert()">
         <img class="menu_img" src="https://img.icons8.com/ios-glyphs/480/menu--v3.png" alt="menu--v3"/>
         </button>
     <p id="p" class="p"></p>
@@ -189,22 +295,63 @@
        
     </div>
     <!--បង្កើត Navigation bar សម្រាប់Web page ដោយមិនប្រើប្រាស់ List used div-->  
-    <p>my project</p>
+  
     <div class="navbar">
         <a href="#" > <div class="a">home</div></a>
         <a href=""><div class="a">about</div></a>
         <a href="">  <div class="a">Services</div></a>
-        <a href="">  <div class="a">Contact</div></a>
+        <a href="index.html">  <div class="a">Contact</div></a>
       
     </div>
-    <a href="linkweb.html">link open Web</a>
+ 
+
+    <div class="product-box">
+        <img src="product-image.jpg" alt="Product Image" class="product-image">
+        <h2 class="product-title">open web</h2>
+        <p class="product-description">This is a short description of the product.</p>
+        <div class="product-price">$0.00</div>
+        <a class="buy-button" href="linkweb.html">open</a>
+       
+    </div>
+    <div class="product-box">
+        <img src="product-image.jpg" alt="Product Image" class="product-image">
+        <h2 class="product-title">Product Title</h2>
+        <p class="product-description">This is a short description of the product.</p>
+        <div class="product-price">$19.99</div>
+        <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="product-box">
+        <img src="product-image.jpg" alt="Product Image" class="product-image">
+        <h2 class="product-title">Product Title</h2>
+        <p class="product-description">This is a short description of the product.</p>
+        <div class="product-price">$19.99</div>
+        <button class="buy-button">Buy Now</button>
+    </div>
+    <div class="product-box">
+      <img src="product-image.jpg" alt="Product Image" class="product-image">
+      <h2 class="product-title">Product Title</h2>
+      <p class="product-description">This is a short description of the product.</p>
+      <div class="product-price">$19.99</div>
+      <button class="buy-button">Buy Now</button>
+  </div>
+  <div class="product-box">
+    <img src="product-image.jpg" alt="Product Image" class="product-image">
+    <h2 class="product-title">Product Title</h2>
+    <p class="product-description">This is a short description of the product.</p>
+    <div class="product-price">$19.99</div>
+    <button class="buy-button">Buy Now</button>
+</div>
+
+
+
+    
     <script>
 
 function showCustomAlert() {
             document.getElementById('customAlert').style.display = 'block';
             document.querySelector('.alert-overlay .linkalet').style.display = 'block';
             document.querySelector('.show-alert-button').style.display = 'none';
-            setTimeout(closeCustomAlert, 6000);
+            
           
         }
 
