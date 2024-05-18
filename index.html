@@ -346,31 +346,18 @@
   
       <script>
 
-        function showCustomAlert() {
-                    document.getElementById('customAlert').style.display = 'block';
-                    document.querySelector('.alert-overlay .linkalet').style.display = 'block';
-                    document.querySelector('.show-alert-button').style.display = 'none';
-                    setTimeout(closeCustomAlert, 6000);
-                  
-                }
+     function showCustomAlert() {
+    setTimeout(closeCustomAlert, 5000);
+            document.getElementById('customAlert').style.display = 'block';
+            document.querySelector('.alert-overlay .linkalet').style.display = 'block';
         
-                function closeCustomAlert() {
-                    document.getElementById('customAlert').style.display = 'none';
-                    document.querySelector('.alert-overlay ').style.display = 'none';
-                }
-        
-               
-        
-               function hidebar() {
-                  
-                    document.querySelector('.navbar').style.display = 'none';
-                  
-                }
-                function showbar() {
-                  
-                  document.querySelector('.navbar').style.display = 'block';
-                
-              }
+        }
+
+        function closeCustomAlert() {
+            document.getElementById('customAlert').style.display = 'none';
+            document.querySelector('.alert-overlay ').style.display = 'none';
+        }
+
             </script>
         
   
