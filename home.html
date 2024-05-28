@@ -89,29 +89,6 @@
 
   
 
-     <>
-       
-
-        let lastScrollTop = 0;
-        const navbar =  document.querySelector('.show-alert-button');
-
-window.addEventListener("scroll", function() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (scrollTop > lastScrollTop) {
-        // Downscroll
-        navbar.style.top = "-60px";
-      
-    } else {
-        // Upscroll
-        navbar.style.top = "0";
-        // Adjust this value if the navbar height changes
-    }
-    lastScrollTop=scrollTop;
-
-  
-});
-
         
             <script>
                 function showCustomAlert() {
